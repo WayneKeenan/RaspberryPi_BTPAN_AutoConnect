@@ -1,4 +1,10 @@
+## A script and cron job to auto connect to a Bluetooth Network.
 
+
+After cloning this repostiory copy the 2 scripts `bt-pan` and `check-and-connect-bt-pan.sh` to `~pi/bin`  (create the folder if necessary)
+
+
+## 
 
 run `hcitool scan`:
 
@@ -15,7 +21,6 @@ Edit `check-and-connect-bt-pan.sh` replacing the MAC address foud from `hcitool 
 BT_MAC_ADDR=F4:5C:89:8B:10:E8
 
 ```
-
 
 
 
