@@ -2,13 +2,14 @@
 
 See this [video](https://www.youtube.com/watch?v=4Ac0wc-f9HI) by Andrew Mulholland on how to setup a connection manually first.
 
+The bt-pan script come from [here](https://github.com/mk-fg/fgtk.git).
 
 
-After cloning this repostiory copy the 2 scripts `bt-pan` and `check-and-connect-bt-pan.sh` to `~pi/bin`  
+After cloning this repository copy the 2 scripts `bt-pan` and `check-and-connect-bt-pan.sh` to `~pi/bin`  
 (create the folder if necessary)
 
 
-## Find your Mac/PC 
+## Find your Mac/PC MAC Address
 
 We need the Bluetooth MAC address of your Mac/PC that is providing the network link.
 
@@ -20,7 +21,7 @@ Scanning ...
 	F4:5C:89:8B:10:E8	Wayne’s MacBook Pro
 ```
 
-Edit `check-and-connect-bt-pan.sh` and replace the exisitng MAC address assinged to `BT_MAC_ADDR` with the one found by `hcitool scan` for your computer.
+Edit `check-and-connect-bt-pan.sh` and replace the exisitng MAC address assigned to `BT_MAC_ADDR` with the one found by `hcitool scan` for your computer.
 
 ```
 BT_MAC_ADDR=<Your MAc address>
@@ -29,7 +30,7 @@ BT_MAC_ADDR=<Your MAc address>
 
 ## CRON job
 
-In order for the Pi to automatically reconnect create a `cron` job to run a script every minute.
+In order for the Pi to automatically (re)connect create a `cron` job to run a script every minute.
 
 Type:
 ```
