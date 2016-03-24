@@ -24,7 +24,7 @@ Scanning ...
 Edit `check-and-connect-bt-pan.sh` and replace the exisitng MAC address assigned to `BT_MAC_ADDR` with the one found by `hcitool scan` for your computer.
 
 ```
-BT_MAC_ADDR=<Your Mac address>
+BT_MAC_ADDR=<Your MAC address>
 ```
 
 
