@@ -1,19 +1,19 @@
 ## A script and cron job to auto connect to a Bluetooth Network.
 
-See this [video](https://www.youtube.com/watch?v=4Ac0wc-f9HI) by Andrew Mulholland on how to setup a connection manually first.
+See this [video](https://www.youtube.com/watch?v=4Ac0wc-f9HI) by Andrew Mulholland on how to setup a connection on a Pi3 manually first.
 
-The bt-pan script come from [here](https://github.com/mk-fg/fgtk.git).
+The bt-pan script comes from [here](https://github.com/mk-fg/fgtk.git).
 
 
-After cloning this repository copy the 2 scripts `bt-pan` and `check-and-connect-bt-pan.sh` to `~pi/bin`  
+After cloning this repository copy the 2 scripts `bt-pan` and `check-and-connect-bt-pan.sh` into `~pi/bin`  
 (create the folder if necessary)
 
 
 ## Find your Mac/PC MAC Address
 
-We need the Bluetooth MAC address of your Mac/PC that is providing the network link.
+We need the Bluetooth MAC address of your Mac/PC that is providing the Bluetooth network.
 
-run `hcitool scan`:
+On the Pi run `hcitool scan`:
 
 ```
 hcitool scan
@@ -24,7 +24,7 @@ Scanning ...
 Edit `check-and-connect-bt-pan.sh` and replace the exisitng MAC address assigned to `BT_MAC_ADDR` with the one found by `hcitool scan` for your computer.
 
 ```
-BT_MAC_ADDR=<Your MAc address>
+BT_MAC_ADDR=<Your Mac address>
 ```
 
 
